@@ -78,8 +78,8 @@ PLUGIN_EXPORT void Reload(void* data, void* rm, double* maxValue)
 	// Read parent specific options
 	if (parent->ownerChild == child)
 	{
-		LPCWSTR skip = RmReadString(rm, L"TextOnly", L"OFF");
-		if (_wcsicmp(skip, L"OFF") == 0)
+		bool skip = 0!=RmReadInt(rm, L"TextOnly", 0);
+		if (!skip)
 		{
 			parent->clipboard->SetTextOnly(false);
 		}
