@@ -1,12 +1,25 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-
-# Compiled Dynamic libraries
-*.so
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+/TestBench
+/ipch
+bin
+obj
+Certificate.bat
+*.aps
+*.bak
+*.docstates
+*.exe
+*.exp
+*.idb
+*.ilk
+*.lastbuildstate
+*.log
+*.manifest
+*.obj
+*.opensdf
+*.pdb
+*manifest.rc
+*.res
+*.sdf
+*.suo
+*.tlog
+*.txt
+*.user
