@@ -62,7 +62,7 @@ ParentName=ParentMeasure
 
 Commands
 -
-Commands **only** work on [Parent Measures](https://github.com/brianferguson/Clipboard.dll/blob/master/README.md#for-parent-measures-only).
+Commands **only** work on [Parent Measures](#for-parent-measures-only).
 
 * **Clear** - Clears the contents of the Windows Clipboard and clears all indices of the Parent measure. Also, `Index=0` of other Parent measures will be deleted only if `Index=0` equals the same on both Parents.
 
