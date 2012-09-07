@@ -68,8 +68,8 @@ Download
 
 ####To download current plugin (.dll):
 
-* [32-bit version](https://github.com/brianferguson/Clipboard.dll/blob/master/PluginClipboard/x32/Release/Clipboard.dll)
-* [64-bit version](https://github.com/brianferguson/Clipboard.dll/blob/master/PluginClipboard/x64/Release/Clipboard.dll)
+* [32-bit version](https://github.com/brianferguson/Clipboard.dll/blob/master/PluginClipboard/x32/Release/Clipboard.dll?raw=true)
+* [64-bit version](https://github.com/brianferguson/Clipboard.dll/blob/master/PluginClipboard/x64/Release/Clipboard.dll?raw=true)
 
 
 Build Instructions
