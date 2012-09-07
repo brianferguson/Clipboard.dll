@@ -9,6 +9,7 @@ Contents
 
 * [Features](https://github.com/brianferguson/Clipboard.dll#features)
 * [Options](https://github.com/brianferguson/Clipboard.dll#options)
+* [Commands]((https://github.com/brianferguson/Clipboard.dll#commands)
 * [Download](https://github.com/brianferguson/Clipboard.dll#download)
 * [Build Instructions](https://github.com/brianferguson/Clipboard.dll#build-instructions)
 * [Examples](https://github.com/brianferguson/Clipboard.dll#examples)
@@ -58,6 +59,19 @@ ParentName=ParentMeasure
 
 * **Index** - Represents the current content of the Windows Clipboard. Can be used on both Parent and Child measures. (`Index=0` is default)
 
+
+Commands
+-
+Commands **only** work on [Parent Measures](https://github.com/brianferguson/Clipboard.dll/blob/master/README.md#for-parent-measures-only).
+
+* **Clear** - Clears the contents of the Windows Clipboard and clears all indices of the Parent measure. Also, `Index=0` of other Parent measures will be deleted only if `Index=0` equals the same on both Parents.
+Usage: `!CommandMeasure ParentMeasure Clear`
+* **ClearIndex _n_** - Clears index "_n_" and moves other indices to a lower index. If _n_=0, the Windows Clipboard is cleared, and **only** `Index=0` (not all indices) - It also will delete `Index=0` from other Parent measures if the data is the same.
+Usage: `!CommandMeasure ParentMeasure "ClearIndex 2"`
+* **Copy _string_** - Copies *string* to the Windows Clipboard.
+Usage: `!CommandMeasure ParentMeasure "Copy Test"`
+* **CopyIndex _n_** - Copies string at index *n* to the Windows Clipboard.
+Usage: `!CommandMeasure ParentMeasure "CopyIndex 2"`
 
 Download
 -
