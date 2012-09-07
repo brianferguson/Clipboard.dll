@@ -28,7 +28,7 @@ Here are some of the features of the Clipboard plugin:
 #####Warning:
 When displaying the contents of the Windows Clipboard, it is **highly** recommended to include a Width and Height in your [String](http://rainmeter.net/cms/Meters-String) meter. Otherwise, your string meter will expand to the edge of your skin. Or worse yet, if you are using [DynamicWindowSize](http://rainmeter.net/cms/Skins-Rainmeter) and no Width and Height in your String meter, the contents of the clipboard *could* take up your entire screen.
 
-######<sup>1</sup> _**If `TextOnly=ON` then `Index=0` will not equal the current contents of the Windows Clipboard.**_
+######<sup>1</sup> _**If `TextOnly=1` then `Index=0` will not equal the current contents of the Windows Clipboard.**_
 
 
 Options
