@@ -221,14 +221,6 @@ PLUGIN_EXPORT void ExecuteBang(void* data, LPCWSTR args)
 					RmLog(LOG_ERROR, L"Clipboard.dll: Unable to set clipboard");
 				}
 			}
-			// !CommandMeasure "Copy string"
-			else if (_wcsnicmp(args, L"Copy", 4) == 0)
-			{
-				if (!parent->clipboard->SetClipboard(arg))
-				{
-					RmLog(LOG_ERROR, L"Clipboard.dll: Unable to set clipboard");
-				}
-			}
 			else
 			{
 				RmLog(LOG_ERROR, L"Clipboard.dll: Unknown args");
