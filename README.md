@@ -6,28 +6,28 @@ Clipboard.dll is a plugin for [Rainmeter](http://www.rainmeter.net) that will di
 
 Contents
 -
-
-* [Features](https://github.com/brianferguson/Clipboard.dll#Features)
-* [Options](https://github.com/brianferguson/Clipboard.dll#Options)
- * [Parent Measures Only](https://github.com/brianferguson/Clipboard.dll#Parent)
+<small>
+* [Features](https://github.com/brianferguson/Clipboard.dll#features)
+* [Options](https://github.com/brianferguson/Clipboard.dll#options)
+ * [Parent Measures Only](https://github.com/brianferguson/Clipboard.dll#for-parent-measures-only)
   * [TextOnly](https://github.com/brianferguson/Clipboard.dll#TextOnly)
   * [ErrorString](https://github.com/brianferguson/Clipboard.dll#ErrorString)
   * [Example](https://github.com/brianferguson/Clipboard.dll#ParentExample)
- * [Child Measures Only](https://github.com/brianferguson/Clipboard.dll#Child)
+ * [Child Measures Only](https://github.com/brianferguson/Clipboard.dll#for-child-measure-only)
   * [ParentName](https://github.com/brianferguson/Clipboard.dll#ParentName)
   * [Example](https://github.com/brianferguson/Clipboard.dll#ChildExample)
- * [Both Parent and Child Measures](https://github.com/brianferguson/Clipboard.dll#Both)
+ * [Both Parent and Child Measures](https://github.com/brianferguson/Clipboard.dll#for-all-clipboard-measures)
   * [Index](https://github.com/brianferguson/Clipboard.dll#Index)
-* [Download](https://github.com/brianferguson/Clipboard.dll#Download)
+* [Download](https://github.com/brianferguson/Clipboard.dll#download)
  * [Using Git](https://github.com/brianferguson/Clipboard.dll#Git)
  * [As a .zip](https://github.com/brianferguson/Clipboard.dll#Zip)
  * [32-bit Plugin](https://github.com/brianferguson/Clipboard.dll#32)
  * [64-bit Plugin](https://github.com/brianferguson/Clipboard.dll#64)
-* [Build Instructions](https://github.com/brianferguson/Clipboard.dll#Build-Instructions)
+* [Build Instructions](https://github.com/brianferguson/Clipboard.dll#build-instructions)
 * Examples
  * [Example 1](https://github.com/brianferguson/Clipboard.dll#Example1)
  * [Example 2](https://github.com/brianferguson/Clipboard.dll#Example2)
-
+</small>
  
 Features
 -
@@ -43,7 +43,6 @@ Here are some of the features of the Clipboard plugin:
 
 Options
 -
-<a name="Parent" class="anchor" href="#Parent"><span class="mini-icon mini-icon-link"></span></a>
 ###For Parent measures *only*:
 
 * <a name="TextOnly" class="anchor" href="#TextOnly"><span class="mini-icon mini-icon-link"></span></a>**TextOnly** - When "On", only logs **text** items in the Windows Clipboard. When "Off" and **non-text** items are copied to the Windows Clipboard, then the ErrorString is returned. (`TextOnly=OFF` is default)
@@ -59,7 +58,6 @@ TextOnly=OFF
 ErrorString=<Invalid data>
 ```
 
-<a name="Child" class="anchor" href="#Child"><span class="mini-icon mini-icon-link"></span></a>
 ###For Child measure *only*:
 
 * <a name="ParentName" class="anchor" href="#ParentName"><span class="mini-icon mini-icon-link"></span></a>**ParentName** - The name of the Parent Measure. Do not include brackets. ie. `ParentName=ParentMeasure` is valid. `ParentName=[ParentMeasure]` is invalid.
@@ -73,7 +71,6 @@ Plugin=Clipboard
 ParentName=ParentMeasure
 ```
 
-<a name="Both" class="anchor" href="#Both"><span class="mini-icon mini-icon-link"></span></a>
 ###For ALL Clipboard measures:
 
 * <a name="Index" class="anchor" href="#Index"><span class="mini-icon mini-icon-link"></span></a>**Index** - Represents the current content of the Windows Clipboard. Can be used on both Parent and Child measures. (`Index=0` is default)
