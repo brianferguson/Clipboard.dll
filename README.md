@@ -6,28 +6,42 @@ Clipboard.dll is a plugin for [Rainmeter](http://www.rainmeter.net) that will di
 
 Contents
 -
-<small>
-* [Features](https://github.com/brianferguson/Clipboard.dll#features)
-* [Options](https://github.com/brianferguson/Clipboard.dll#options)
- * [Parent Measures Only](https://github.com/brianferguson/Clipboard.dll#for-parent-measures-only)
-  * [TextOnly](https://github.com/brianferguson/Clipboard.dll#TextOnly)
-  * [ErrorString](https://github.com/brianferguson/Clipboard.dll#ErrorString)
-  * [Example](https://github.com/brianferguson/Clipboard.dll#ParentExample)
- * [Child Measures Only](https://github.com/brianferguson/Clipboard.dll#for-child-measure-only)
-  * [ParentName](https://github.com/brianferguson/Clipboard.dll#ParentName)
-  * [Example](https://github.com/brianferguson/Clipboard.dll#ChildExample)
- * [Both Parent and Child Measures](https://github.com/brianferguson/Clipboard.dll#for-all-clipboard-measures)
-  * [Index](https://github.com/brianferguson/Clipboard.dll#Index)
-* [Download](https://github.com/brianferguson/Clipboard.dll#download)
- * [Using Git](https://github.com/brianferguson/Clipboard.dll#Git)
- * [As a .zip](https://github.com/brianferguson/Clipboard.dll#Zip)
- * [32-bit Plugin](https://github.com/brianferguson/Clipboard.dll#32)
- * [64-bit Plugin](https://github.com/brianferguson/Clipboard.dll#64)
-* [Build Instructions](https://github.com/brianferguson/Clipboard.dll#build-instructions)
-* Examples
- * [Example 1](https://github.com/brianferguson/Clipboard.dll#Example1)
- * [Example 2](https://github.com/brianferguson/Clipboard.dll#Example2)
-</small>
+
+<ul>
+ <li>[Features](https://github.com/brianferguson/Clipboard.dll#features)</li>
+ <li>[Options](https://github.com/brianferguson/Clipboard.dll#options)</li>
+  <ul>
+   <li>[Parent Measures Only](https://github.com/brianferguson/Clipboard.dll#for-parent-measures-only)</li>
+    <ul>
+     <li>[TextOnly](https://github.com/brianferguson/Clipboard.dll#TextOnly)</li>
+     <li>[ErrorString](https://github.com/brianferguson/Clipboard.dll#ErrorString)</li>
+     <li>[Example](https://github.com/brianferguson/Clipboard.dll#ParentExample)</li>
+    </ul>
+   <li>[Child Measures Only](https://github.com/brianferguson/Clipboard.dll#for-child-measure-only)</li>
+    <ul>
+     <li>[ParentName](https://github.com/brianferguson/Clipboard.dll#ParentName)</li>
+     <li>[Example](https://github.com/brianferguson/Clipboard.dll#ChildExample)</li>
+    </ul>
+   <li>[Both Parent and Child Measures](https://github.com/brianferguson/Clipboard.dll#for-all-clipboard-measures)</li>
+    <ul>
+	 <li>[Index](https://github.com/brianferguson/Clipboard.dll#Index)</li>
+	</ul>
+  </ul>
+ <li>[Download](https://github.com/brianferguson/Clipboard.dll#download)</li>
+  <ul>
+   <li>[Using Git](https://github.com/brianferguson/Clipboard.dll#Git)</li>
+   <li>[As a .zip](https://github.com/brianferguson/Clipboard.dll#Zip)</li>
+   <li>[32-bit Plugin](https://github.com/brianferguson/Clipboard.dll#32)</li>
+   <li>[64-bit Plugin](https://github.com/brianferguson/Clipboard.dll#64)</li>
+  </ul>
+ <li>[Build Instructions](https://github.com/brianferguson/Clipboard.dll#build-instructions)</li>
+ <li>Examples</li>
+  <ul>
+   <li>[Example 1](https://github.com/brianferguson/Clipboard.dll#Example1)</li>
+   <li>[Example 2](https://github.com/brianferguson/Clipboard.dll#Example2)</li>
+  </ul>
+</ul>
+
  
 Features
 -
@@ -95,14 +109,14 @@ This plugin was written in c++ using the [Rainmeter Plugin SDK](https://github.c
 
 To build this source code, you will need Visual Studio 2010. If you are using any _**paid**_ version of Visual Studio (Professional, Premium, Ultimate, etc.) you can open "PluginClipboard.sln" and build from there. If you are using Visual C++ 2010 Express, then please install the following **in order**:
 
- * Visual Studio 2010 Express Edition
- * Visual Studio 2010 SP1
- * Windows 7.1 SDK
- * KB2519277 compiler update
+1. Visual Studio 2010 Express Edition
+2. Visual Studio 2010 SP1
+3. Windows 7.1 SDK
+4. KB2519277 compiler update
 
 Then you can open "PluginClipboard.sln" and build from there.
 
----
+
 Examples
 -
 
