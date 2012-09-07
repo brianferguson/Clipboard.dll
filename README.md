@@ -34,7 +34,7 @@ Options
 -
 ###For Parent measures *only*:
 
-* **TextOnly** - When "On", only logs **text** items in the Windows Clipboard. When "Off" and **non-text** items are copied to the Windows Clipboard, then the ErrorString is returned. (`TextOnly=OFF` is default)
+* **TextOnly** - When "1", only logs **text** items in the Windows Clipboard. When "0" and **non-text** items are copied to the Windows Clipboard, then the ErrorString is returned. (`TextOnly=0` is default)
 * **ErrorString** - This is what is returned when **non-text** is copied to the Windows Clipboard. For example, if you copy a file or an image, then ErrorString will be returned. (An empty string is default.)
 
 #####Example:
@@ -42,7 +42,7 @@ Options
 [ParentMeasure]
 Measure=Plugin
 Plugin=Clipboard
-TextOnly=OFF
+TextOnly=0
 ErrorString=<Invalid data>
 ```
 
@@ -82,6 +82,7 @@ Changes
 Here is a list of the major changes to the plugin.
 
 #####Version:
+* **1.0.2** - Changed TextOnly to work with "0/1" instead of "Off/On"
 * **1.0.1** - Removed support for command "Copy". Use !SetClip instead.
 
 Download
@@ -144,7 +145,7 @@ This example will save the last 3 **text-only** items copied to the Windows Clip
 [MeasureParent]
 Measure=Plugin
 Plugin=Clipboard
-TextOnly=ON
+TextOnly=1
 ;Index=0
 
 [MeasureChild1]
