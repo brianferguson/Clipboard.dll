@@ -37,8 +37,7 @@ Options
 
 * **TextOnly** - When "1", only logs **text** items in the Windows Clipboard. When "0" and **non-text** items are copied to the Windows Clipboard, then the ErrorString is returned. (`TextOnly=0` is default)
 * **ErrorString** - This is what is returned when **non-text** is copied to the Windows Clipboard. For example, if you copy a file or an image, then ErrorString will be returned. (An empty string is default.)
-* **MaxIndex** - This number represents the number of indices that will be available. This is to avoid high memory usage by the plugin. It is recommended to have this number equal the number of indices you plan on referencing. For instance, you plan on referencing `Index=5`, set `MaxIndex=5`. (`MaxIndex=15` is default)
-A `MaxIndex=-1` means that the measure will remember **ALL** indices, which can take up a lot of memory. If you use this option, it is recommended to use the "Clear" command periodically.
+* **MaxIndex** - This number represents the number of indices that will be available. This is to avoid high memory usage by the plugin. It is recommended to have this number equal the number of indices you plan on referencing. For instance, you plan on referencing `Index=5`, set `MaxIndex=5`. A `MaxIndex=-1` means that the measure will remember **ALL** indices, which can take up a lot of memory. If you use this option, it is recommended to use the "Clear" command periodically. (`MaxIndex=15` is default)
 
 #####Example:
 ```ini
