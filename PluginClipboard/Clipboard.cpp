@@ -25,6 +25,7 @@
 CClipboard::CClipboard() :
 	errorString(),
 	textOnly(false),
+	maxIndex(15),
 	initialized(false),
 	clipData()
 {
@@ -73,11 +74,19 @@ bool CClipboard::GetClipboard()
 					clipData.push_back(currentData);
 				}
 			}
+
 			// Non-text is in the clipboard AND clipboard is NOT empty
 			// Apparently an empty clipboard still has a format, so count needs to be above 2
 			else if (!textOnly && CountClipboardFormats() > 2)
 			{
 				clipData.push_back(errorString);
+			}
+
+			// Delete the oldest index if maxIndex has been reached.
+			// A maxIndex of -1, means to remember ALL indices. (Not recommended)
+			if (maxIndex != -1 && clipData.size() > maxIndex + 1)
+			{
+				clipData.erase(clipData.begin());
 			}
 
 			initialized = true;

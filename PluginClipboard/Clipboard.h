@@ -28,8 +28,9 @@ public:
 	CClipboard();
 
 	// Set user-defined options
-	void SetErrorString(std::wstring text) { errorString = text; }
 	void SetTextOnly(bool setting = false) { textOnly = setting; }
+	void SetErrorString(std::wstring text) { errorString = text; }
+	void SetMaxIndex(int max) { maxIndex = max; }
 
 	// Get/Set Windows Clipboard contents
 	bool GetClipboard();
@@ -49,6 +50,7 @@ private:
 	// User-defined data
 	std::wstring errorString;
 	bool textOnly;
+	int maxIndex;
 
 	// Current/Historical data of the Windows Clipboard
 	std::vector<std::wstring> clipData;

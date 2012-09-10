@@ -90,6 +90,9 @@ PLUGIN_EXPORT void Reload(void* data, void* rm, double* maxValue)
 
 		LPCWSTR errorString = RmReadString(rm, L"ErrorString", L"");
 		parent->clipboard->SetErrorString(errorString);
+
+		int maxIndex = RmReadInt(rm, L"MaxIndex", 15);
+		parent->clipboard->SetMaxIndex(maxIndex);
 	}
 }
 
@@ -220,6 +223,8 @@ PLUGIN_EXPORT void ExecuteBang(void* data, LPCWSTR args)
 				{
 					RmLog(LOG_ERROR, L"Clipboard.dll: Unable to set clipboard");
 				}
+
+				return;
 			}
 			else
 			{
@@ -227,6 +232,8 @@ PLUGIN_EXPORT void ExecuteBang(void* data, LPCWSTR args)
 			}
 		}
 	}
+
+	return;
 }
 
 // Helper function to erase index 0 from other Parent Measures

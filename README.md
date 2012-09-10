@@ -21,7 +21,7 @@ Features
 Here are some of the features of the Clipboard plugin:
 
 * Uses the Parent/Child structure.
-* Once loaded, the plugin "remembers" any text that is copied to the Windows Clipboard.
+* Once loaded, the plugin "remembers" any text that is copied to the Windows Clipboard. If the skin gets unloaded or refreshed, all indices will be deleted.
 * Once new text is copied to the clipboard, the plugin pushes everything back 1 spot. So `Index=0` will always<sup>1</sup> represent the current contents of the clipboard.
 * The string is converted to a number (if applicable).
 
@@ -37,6 +37,8 @@ Options
 
 * **TextOnly** - When "1", only logs **text** items in the Windows Clipboard. When "0" and **non-text** items are copied to the Windows Clipboard, then the ErrorString is returned. (`TextOnly=0` is default)
 * **ErrorString** - This is what is returned when **non-text** is copied to the Windows Clipboard. For example, if you copy a file or an image, then ErrorString will be returned. (An empty string is default.)
+* **MaxIndex** - This number represents the number of indices that will be available. This is to avoid high memory usage by the plugin. It is recommended to have this number equal the number of indices you plan on referencing. For instance, you plan on referencing `Index=5`, set `MaxIndex=5`. (`MaxIndex=15` is default)
+A `MaxIndex=-1` means that the measure will remember **ALL** indices, which can take up a lot of memory. If you use this option, it is recommended to use the "Clear" command periodically.
 
 #####Example:
 ```ini
@@ -83,6 +85,7 @@ Changes
 Here is a list of the major changes to the plugin.
 
 #####Version:
+* **1.0.3** - Added MaxIndex support for Parent measures to avoid high memory usage.
 * **1.0.2** - Changed TextOnly to work with "0/1" instead of "Off/On"
 * **1.0.1** - Removed support for command "Copy". Use !SetClip instead.
 
