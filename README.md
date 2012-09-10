@@ -125,6 +125,7 @@ This example will save the last 3 items copied to the Windows Clipboard. Since "
 [MeasureParent]
 Measure=Plugin
 Plugin=Clipboard
+MaxIndex=2
 ErrorString=<Invalid Data>
 ;Index=0
 
@@ -148,8 +149,9 @@ This example will save the last 3 **text-only** items copied to the Windows Clip
 [MeasureParent]
 Measure=Plugin
 Plugin=Clipboard
+MaxIndex=2
 TextOnly=1
-;Index=0
+Index=0
 
 [MeasureChild1]
 Measure=Plugin
